@@ -16,6 +16,13 @@
     "topics": [
       "us"
     ],
+    "translation": {
+      "excerpt_zh": "美联储理事会发布2025年消费者财务调查结果，为公众和政策制定者提供有关美国家庭经济状况的详细信息。",
+      "method": "人工翻译",
+      "title_zh": "美联储公布2025年消费者财务调查结果",
+      "translated_at": "2026-10-28T03:23:14.836701+00:00",
+      "version": "f52dfc83e5c37dff62f1662d"
+    },
     "updated_at": "2026-10-28T03:18:34.810221+00:00",
     "version": "f52dfc83e5c37dff62f1662d",
     "weight": 7
@@ -37,6 +44,13 @@
     "topics": [
       "us"
     ],
+    "translation": {
+      "excerpt_zh": "美联储理事会宣布批准 Isabella Bank Corporation 的申请。当前来源短摘录未说明申请的具体内容。",
+      "method": "人工翻译",
+      "title_zh": "美联储批准 Isabella Bank Corporation 的申请",
+      "translated_at": "2026-10-28T03:23:14.836707+00:00",
+      "version": "78991ddbc6d237ea7f117248"
+    },
     "updated_at": "2026-10-28T03:18:34.810471+00:00",
     "version": "78991ddbc6d237ea7f117248",
     "weight": 7
@@ -59,6 +73,13 @@
       "us",
       "global"
     ],
+    "translation": {
+      "excerpt_zh": "美国经济分析局与人口普查局公布，2026年8月美国货物与服务贸易逆差由7月修订后的928亿美元扩大至1056亿美元，原因是进口增幅超过出口。8月货物贸易逆差增加128亿美元，达到1366亿美元。原始短摘录末尾不完整，此处仅翻译其中的完整信息。",
+      "method": "人工翻译",
+      "title_zh": "美国2026年8月货物与服务贸易逆差扩大至1056亿美元",
+      "translated_at": "2026-10-28T03:23:14.836709+00:00",
+      "version": "79ae295aae1532a0e60a9562"
+    },
     "updated_at": "2026-10-28T03:20:10.243600+00:00",
     "version": "79ae295aae1532a0e60a9562",
     "weight": 7
@@ -80,6 +101,13 @@
     "topics": [
       "us"
     ],
+    "translation": {
+      "excerpt_zh": "美联储理事会宣布批准 Fleur Capital Corporation 的申请。当前来源短摘录未说明申请的具体内容。",
+      "method": "人工翻译",
+      "title_zh": "美联储批准 Fleur Capital Corporation 的申请",
+      "translated_at": "2026-10-28T03:23:14.836711+00:00",
+      "version": "a69961a95b677fd1f18987df"
+    },
     "updated_at": "2026-10-28T03:18:34.810678+00:00",
     "version": "a69961a95b677fd1f18987df",
     "weight": 7
@@ -101,6 +129,13 @@
     "topics": [
       "us"
     ],
+    "translation": {
+      "excerpt_zh": "美联储理事会宣布，将其有关《O条例》（Regulation O）现代化提案的公众意见征集期延长至11月4日。",
+      "method": "人工翻译",
+      "title_zh": "美联储将《O条例》现代化提案的意见征集期延长至11月4日",
+      "translated_at": "2026-10-28T03:23:14.836713+00:00",
+      "version": "b66bfade83271ce15e01a958"
+    },
     "updated_at": "2026-10-28T03:18:34.810732+00:00",
     "version": "b66bfade83271ce15e01a958",
     "weight": 7
@@ -122,6 +157,13 @@
     "topics": [
       "us"
     ],
+    "translation": {
+      "excerpt_zh": "美联储理事会宣布对美国运通公司采取监管执法措施，其中涉及该公司未能充分识别并报告某些与洗钱有关的可疑活动。",
+      "method": "人工翻译",
+      "title_zh": "美联储对美国运通采取监管执法措施，涉及反洗钱监测与报告不足",
+      "translated_at": "2026-10-28T03:23:14.836715+00:00",
+      "version": "31f0218de766d69472282c1a"
+    },
     "updated_at": "2026-10-28T03:18:34.810401+00:00",
     "version": "31f0218de766d69472282c1a",
     "weight": 7
@@ -143,6 +185,13 @@
     "topics": [
       "us"
     ],
+    "translation": {
+      "excerpt_zh": "美联储理事会公布针对 Ontario Bancorporation, Inc. 的监管执法措施。当前来源短摘录未提供具体措施内容。",
+      "method": "人工翻译",
+      "title_zh": "美联储对 Ontario Bancorporation 采取监管执法措施",
+      "translated_at": "2026-10-28T03:23:14.836716+00:00",
+      "version": "8f0479b81022f0d00dafa147"
+    },
     "updated_at": "2026-10-28T03:18:34.810949+00:00",
     "version": "8f0479b81022f0d00dafa147",
     "weight": 7
@@ -164,6 +213,13 @@
     "topics": [
       "us"
     ],
+    "translation": {
+      "excerpt_zh": "美联储理事会宣布，终止对 Gardner Bancshares, Inc. 和 Small Business Bank 的监管执法措施。",
+      "method": "人工翻译",
+      "title_zh": "美联储宣布终止对 Gardner Bancshares 及 Small Business Bank 的监管执法措施",
+      "translated_at": "2026-10-28T03:23:14.836718+00:00",
+      "version": "1b9f2bff98e92a45a17ced60"
+    },
     "updated_at": "2026-10-28T03:18:34.810119+00:00",
     "version": "1b9f2bff98e92a45a17ced60",
     "weight": 7

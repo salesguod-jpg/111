@@ -156,6 +156,13 @@ def run(root=ROOT):
     for source_id, result in (status['sources'].items() if root==ROOT else []):
         level='warning' if result['state']=='failed' else 'notice'
         print(f"::{level} title=News source {source_id}::{json.dumps(result,ensure_ascii=True)}")
+    translations=read(root/'config/translations.json',{})
+    for event in events:
+        translation=translations.get(event['id'])
+        if translation and translation.get('version')==event['version']:
+            event['translation']=translation
+        elif event.get('translation',{}).get('version')!=event['version']:
+            event.pop('translation',None)
     calls_before=sum(x['calls'] for x in state['usage'].values())
     for event in sorted(events,key=lambda e:-e['weight']): analyze(event,state,settings,session)
     status['ai_calls']=sum(x['calls'] for x in state['usage'].values())-calls_before
