@@ -19,5 +19,26 @@
     "updated_at": "2026-10-28T03:18:34.811676+00:00",
     "version": "68df5c2c2faaa597600514b9",
     "weight": 7
+  },
+  {
+    "analysis": null,
+    "collected_at": "2026-10-28T03:20:10.243774+00:00",
+    "development": false,
+    "excerpt": "Real gross domestic product (GDP) increased at an annual rate of 2.2 percent in the second quarter of 2026 (April, May, and June), according to the third estimate released today by the U.S. Bureau of Economic Analysis (BEA). In the first quarter, real GDP increased 2.5 percent (revised). The contributors to the increase in real GDP in the second quarter were consumer spending, investment, and expo",
+    "id": "4831fe84d950aaad2046ee74",
+    "original_title": "GDP, (Third Estimate), Industries, Corporate Profits, State GDP, and State Personal Income, 2nd Quarter 2026; State PCE, 2025",
+    "published_at": "2026-09-30T12:30:00+00:00",
+    "sources": [
+      {
+        "name": "美国经济分析局 BEA",
+        "url": "https://www.bea.gov/news/2026/gdp-third-estimate-industries-corporate-profits-state-gdp-and-state-personal-income-2nd"
+      }
+    ],
+    "topics": [
+      "us"
+    ],
+    "updated_at": "2026-10-28T03:20:10.243779+00:00",
+    "version": "f093610265cc0fec03656eb4",
+    "weight": 7
   }
 ]

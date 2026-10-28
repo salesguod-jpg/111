@@ -66,6 +66,27 @@
     },
     {
       "analysis": null,
+      "collected_at": "2026-10-28T03:20:10.243593+00:00",
+      "development": false,
+      "excerpt": "The U.S. goods and services trade deficit increased in August 2026 according to the U.S. Bureau of Economic Analysis and the U.S. Census Bureau. The deficit increased from $92.8 billion in July (revised) to $105.6 billion in August, as imports increased more than exports. The goods deficit increased $12.8 billion in August to $136.6 billion. The services surplus increased less than $0.1 billion in",
+      "id": "53e78c0da57b8ce9c5542c3c",
+      "original_title": "U.S. International Trade in Goods and Services, August 2026",
+      "published_at": "2026-10-06T12:30:00+00:00",
+      "sources": [
+        {
+          "name": "美国经济分析局 BEA",
+          "url": "https://www.bea.gov/news/2026/us-international-trade-goods-and-services-august-2026"
+        }
+      ],
+      "topics": [
+        "us",
+        "global"
+      ],
+      "updated_at": "2026-10-28T03:20:10.243600+00:00",
+      "weight": 7
+    },
+    {
+      "analysis": null,
       "collected_at": "2026-10-28T03:18:34.810469+00:00",
       "development": false,
       "excerpt": "Federal Reserve Board announces approval of application by Isabella Bank Corporation",
@@ -163,6 +184,26 @@
       ],
       "updated_at": "2026-10-28T03:18:34.811676+00:00",
       "weight": 7
+    },
+    {
+      "analysis": null,
+      "collected_at": "2026-10-28T03:20:10.243774+00:00",
+      "development": false,
+      "excerpt": "Real gross domestic product (GDP) increased at an annual rate of 2.2 percent in the second quarter of 2026 (April, May, and June), according to the third estimate released today by the U.S. Bureau of Economic Analysis (BEA). In the first quarter, real GDP increased 2.5 percent (revised). The contributors to the increase in real GDP in the second quarter were consumer spending, investment, and expo",
+      "id": "4831fe84d950aaad2046ee74",
+      "original_title": "GDP, (Third Estimate), Industries, Corporate Profits, State GDP, and State Personal Income, 2nd Quarter 2026; State PCE, 2025",
+      "published_at": "2026-09-30T12:30:00+00:00",
+      "sources": [
+        {
+          "name": "美国经济分析局 BEA",
+          "url": "https://www.bea.gov/news/2026/gdp-third-estimate-industries-corporate-profits-state-gdp-and-state-personal-income-2nd"
+        }
+      ],
+      "topics": [
+        "us"
+      ],
+      "updated_at": "2026-10-28T03:20:10.243779+00:00",
+      "weight": 7
     }
   ],
   "topics": [
@@ -220,7 +261,11 @@
         "Nasdaq",
         "S&P",
         "美国",
-        "美联储"
+        "美联储",
+        "gross domestic product",
+        "personal consumption",
+        "personal income",
+        "U.S."
       ],
       "name": "美国经济与美股",
       "weight": 7
