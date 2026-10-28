@@ -32,8 +32,8 @@ jobs:
       - uses: actions/cache/restore@v4
         with:
           path: .runtime/feeds.json
-          key: feed-checkpoints-${{ github.run_id }}-${{ github.run_attempt }}
-          restore-keys: feed-checkpoints-
+          key: feed-checkpoints-v2-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: feed-checkpoints-v2-
       - name: Probe official RSS endpoints on the actual GitHub runner
         if: github.event_name != 'schedule'
         run: python scripts/probe_sources.py
@@ -58,7 +58,7 @@ jobs:
         if: always()
         with:
           path: .runtime/feeds.json
-          key: feed-checkpoints-${{ github.run_id }}-${{ github.run_attempt }}
+          key: feed-checkpoints-v2-${{ github.run_id }}-${{ github.run_attempt }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:

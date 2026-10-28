@@ -5,6 +5,7 @@ import feedparser
 SOURCES={
  'fed':'https://www.federalreserve.gov/feeds/press_all.xml',
  'bls':'https://www.bls.gov/feed/bls_latest.rss',
+ 'bea_apps':'https://apps.bea.gov/rss/rss.xml',
  'bea':'https://www.bea.gov/news/rss.xml',
  'fed_monetary':'https://www.federalreserve.gov/feeds/press_monetary.xml',
  'dol':'https://www.dol.gov/rss/releases.xml',

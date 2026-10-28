@@ -153,12 +153,14 @@ def run(root=ROOT):
             status['sources'][source['id']]={'state':'ok','entries':len(feed.entries),'accepted':added,'last_success':cache['last_success']}; successes+=1
         except (requests.RequestException,ValueError) as exc:
             status['sources'][source['id']]={'state':'failed','error':type(exc).__name__,'http_status':getattr(getattr(exc,'response',None),'status_code',None),'last_success':cache.get('last_success')}
-    for source_id, result in status['sources'].items():
+    for source_id, result in (status['sources'].items() if root==ROOT else []):
         level='warning' if result['state']=='failed' else 'notice'
         print(f"::{level} title=News source {source_id}::{json.dumps(result,ensure_ascii=True)}")
     calls_before=sum(x['calls'] for x in state['usage'].values())
     for event in sorted(events,key=lambda e:-e['weight']): analyze(event,state,settings,session)
     status['ai_calls']=sum(x['calls'] for x in state['usage'].values())-calls_before
+    if root==ROOT:
+        print(f"::notice title=AI verification::mode={'configured' if os.environ.get('OPENAI_API_KEY') and os.environ.get('OPENAI_MODEL') else 'disabled'} calls={status['ai_calls']}")
     old_status=read(data/'status.json',{})
     status['last_success_at']=now() if successes else old_status.get('last_success_at')
     status['last_ai_at']=max((e.get('ai_at','') for e in events),default='') or None
@@ -178,7 +180,7 @@ def run(root=ROOT):
     # Status changes alone never trigger a deployment.
     if os.environ.get('GITHUB_OUTPUT'):
         with open(os.environ['GITHUB_OUTPUT'],'a') as f: f.write(f'changed={str(visible).lower()}\npersist={str(visible or status["ai_calls"]>0).lower()}\n')
-    print(json.dumps({'successful_sources':successes,'new_events':status['new_events'],'website_changed':visible,'ai_calls':status['ai_calls'],'data_bytes':archive_bytes}))
+    print(json.dumps({'ai_mode':status['ai_mode'],'successful_sources':successes,'new_events':status['new_events'],'website_changed':visible,'ai_calls':status['ai_calls'],'data_bytes':archive_bytes}))
     if any(v['state']=='failed' for v in status['sources'].values()) and not successes and not any(v['state']=='rate_limited' for v in status['sources'].values()):
         status['collection_failed']=True
     return status

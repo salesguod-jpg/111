@@ -1,11 +1,94 @@
 [
- {"id":"fed","name":"美联储官方新闻","url":"https://www.federalreserve.gov/feeds/press_all.xml","enabled":true,"kind":"rss","trust":1.0,"min_interval_minutes":30,"max_age_days":30,"status":"待网络验证","rights":"官方 RSS；只存标题、链接和短摘录"},
- {"id":"bls","name":"美国劳工统计局","url":"https://www.bls.gov/feed/bls_latest.rss","enabled":true,"kind":"rss","trust":1.0,"min_interval_minutes":60,"max_age_days":30,"status":"待网络验证","rights":"官方 RSS；只存标题、链接和短摘录"},
- {"id":"pbc","name":"中国人民银行","url":"https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/index.html","enabled":false,"kind":"pending","status":"未接入：需验证访问规则及解析器"},
- {"id":"stats","name":"国家统计局","url":"https://www.stats.gov.cn/sj/zxfb/","enabled":false,"kind":"pending","status":"未接入：需验证页面解析"},
- {"id":"sse","name":"上交所及贵州茅台公告","url":"https://www.sse.com.cn/","enabled":false,"kind":"pending","status":"未接入：需稳定公开公告接口"},
- {"id":"midea","name":"美的集团公告","url":"https://www.cninfo.com.cn/","enabled":false,"kind":"pending","status":"未接入：需验证公开接口使用条件"},
- {"id":"mof","name":"财政部","url":"https://www.mof.gov.cn/","enabled":false,"kind":"pending","status":"未接入"},
- {"id":"sz","name":"深圳住房官方信息","url":"https://www.sz.gov.cn/cn/xxgk/zfxxgj/zcfg/","enabled":false,"kind":"pending","status":"未接入：尚无区域成交数据接口"},
- {"id":"fx","name":"PHP / THB 汇率","url":"https://www.bsp.gov.ph/","enabled":false,"kind":"pending","status":"未接入：无已验证汇率数据源"}
+  {
+    "id": "fed",
+    "name": "美联储官方新闻",
+    "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+    "enabled": true,
+    "kind": "rss",
+    "trust": 1.0,
+    "min_interval_minutes": 30,
+    "max_age_days": 30,
+    "status": "已验证：GitHub Actions HTTP 200，20 条 RSS；2026-10-28",
+    "rights": "官方 RSS；只存标题、链接和短摘录"
+  },
+  {
+    "id": "fed_monetary",
+    "name": "美联储货币政策官方公告",
+    "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
+    "enabled": true,
+    "kind": "rss",
+    "trust": 1.0,
+    "min_interval_minutes": 30,
+    "max_age_days": 30,
+    "status": "已验证：GitHub Actions HTTP 200，15 条 RSS；2026-10-28",
+    "rights": "官方公开 RSS；仅标题、链接与短摘录"
+  },
+  {
+    "id": "bls",
+    "name": "美国劳工统计局",
+    "url": "https://www.bls.gov/feed/bls_latest.rss",
+    "enabled": false,
+    "kind": "rss",
+    "trust": 1.0,
+    "min_interval_minutes": 60,
+    "max_age_days": 30,
+    "status": "未接入：GitHub Actions 返回 Akamai HTTP 403（2026-10-28），不绕过限制",
+    "rights": "官方 RSS；只存标题、链接和短摘录"
+  },
+  {
+    "id": "pbc",
+    "name": "中国人民银行",
+    "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/index.html",
+    "enabled": false,
+    "kind": "pending",
+    "status": "未接入：需验证访问规则及解析器"
+  },
+  {
+    "id": "stats",
+    "name": "国家统计局",
+    "url": "https://www.stats.gov.cn/sj/zxfb/",
+    "enabled": false,
+    "kind": "pending",
+    "status": "未接入：需验证页面解析"
+  },
+  {
+    "id": "sse",
+    "name": "上交所及贵州茅台公告",
+    "url": "https://www.sse.com.cn/",
+    "enabled": false,
+    "kind": "pending",
+    "status": "未接入：需稳定公开公告接口"
+  },
+  {
+    "id": "midea",
+    "name": "美的集团公告",
+    "url": "https://www.cninfo.com.cn/",
+    "enabled": false,
+    "kind": "pending",
+    "status": "未接入：需验证公开接口使用条件"
+  },
+  {
+    "id": "mof",
+    "name": "财政部",
+    "url": "https://www.mof.gov.cn/",
+    "enabled": false,
+    "kind": "pending",
+    "status": "未接入"
+  },
+  {
+    "id": "sz",
+    "name": "深圳住房官方信息",
+    "url": "https://www.sz.gov.cn/cn/xxgk/zfxxgj/zcfg/",
+    "enabled": false,
+    "kind": "pending",
+    "status": "未接入：尚无区域成交数据接口"
+  },
+  {
+    "id": "fx",
+    "name": "PHP / THB 汇率",
+    "url": "https://www.bsp.gov.ph/",
+    "enabled": false,
+    "kind": "pending",
+    "status": "未接入：无已验证汇率数据源"
+  }
 ]
