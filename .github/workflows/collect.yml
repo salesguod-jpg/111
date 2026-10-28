@@ -34,6 +34,7 @@ jobs:
       - id: collect
         name: Collect and persist incrementally
         env:
+          TRIGGER_TYPE: ${{ github.event_name }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
         run: python scripts/collect.py

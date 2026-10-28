@@ -39,6 +39,40 @@ class PipelineTests(unittest.TestCase):
         with patch.dict(os.environ,{'OPENAI_API_KEY':'test-not-real','OPENAI_MODEL':'test-model'}):
             for _ in range(4): self.assertFalse(c.analyze(events[0],state,SETTINGS,session))
         self.assertEqual(session.post.call_count,2);self.assertEqual(next(iter(state['usage'].values()))['failed'],2)
+    def test_valid_ai_and_cache(self):
+        events=[];c.ingest([article()],SOURCE,events,{},SETTINGS)
+        output={k:'信息不足，请核实原始出处。' for k in c.FIELDS}
+        output.update(summary='这是用于验证结构化输出的测试内容，并非真实新闻。'*5,importance='B',direction='不确定')
+        session=Mock();session.post.return_value=Mock(status_code=200)
+        session.post.return_value.json.return_value={'output':[{'content':[{'type':'output_text','text':json.dumps(output)}]}],'usage':{'input_tokens':100,'output_tokens':150}}
+        state={}
+        with patch.dict(os.environ,{'OPENAI_API_KEY':'test','OPENAI_MODEL':'test-model'}):
+            self.assertTrue(c.analyze(events[0],state,SETTINGS,session))
+            self.assertFalse(c.analyze(events[0],state,SETTINGS,session))
+        self.assertEqual(session.post.call_count,1)
+        self.assertEqual(events[0]['model'],'test-model')
+        self.assertEqual(next(iter(state['usage'].values()))['output_tokens'],150)
+    def test_schema_rejects_missing_fields(self):
+        events=[];c.ingest([article()],SOURCE,events,{},SETTINGS)
+        session=Mock();session.post.return_value=Mock(status_code=200)
+        session.post.return_value.json.return_value={'output':[{'content':[{'type':'output_text','text':'{"importance":"S"}'}]}]}
+        with patch.dict(os.environ,{'OPENAI_API_KEY':'test','OPENAI_MODEL':'test'}):
+            self.assertFalse(c.analyze(events[0],{},SETTINGS,session))
+        self.assertIsNone(events[0]['analysis'])
+    def test_one_source_failure_does_not_block_other_source(self):
+        from email.utils import format_datetime
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);c.write(root/'config/settings.json',SETTINGS)
+            sources=[{'id':x,'name':x,'url':f'https://example.org/{x}','enabled':True,'min_interval_minutes':0,'max_age_days':30} for x in ['bad','good']]
+            c.write(root/'config/sources.json',sources)
+            xml=f'<rss version="2.0"><channel><title>Test</title><item><title>Federal Reserve interest rate decision</title><link>https://example.org/news</link><pubDate>{format_datetime(c.datetime.now(c.UTC))}</pubDate></item></channel></rss>'
+            response=Mock(status_code=200,content=xml.encode(),headers={'ETag':'test'})
+            with patch.object(c.requests.Session,'get',side_effect=[c.requests.ConnectionError(),response]),patch.dict(os.environ,{},clear=True):
+                status=c.run(root)
+            self.assertEqual(status['sources']['bad']['state'],'failed')
+            self.assertEqual(status['sources']['good']['state'],'ok')
+            self.assertEqual(len(c.read(root/'site/data/index.json',{})['events']),1)
+
     def test_budget_stops_calls(self):
         settings=copy.deepcopy(SETTINGS);settings['ai']['daily_calls']=0
         events=[];c.ingest([article()],SOURCE,events,{},SETTINGS);session=Mock()

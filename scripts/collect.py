@@ -117,6 +117,13 @@ def run(root=ROOT):
     state['_path']=str(root/'state/state.json')
     session=requests.Session(); session.headers['User-Agent']='InvestmentIntelligenceHub/1.0 (public RSS reader; conditional requests)'
     status={'actual_run_at':now(),'scheduled_at':os.environ.get('SCHEDULED_AT'),'sources':{},'new_events':0,'new_articles':0,'ai_calls':0}
+    # GitHub provides the cron expression, not a guaranteed original scheduled timestamp.
+    # Keep the distinction explicit instead of presenting the actual start as scheduled time.
+    if os.environ.get('TRIGGER_TYPE')=='schedule':
+        actual=datetime.now(UTC)
+        slot=actual.replace(second=0,microsecond=0)-timedelta(minutes=(actual.minute-7)%10)
+        status['scheduled_at']=slot.isoformat()
+        status['scheduled_at_is_estimate']=True
     successes=0
     for source in sources:
         if not source['enabled']: continue
