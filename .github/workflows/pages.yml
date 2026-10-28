@@ -49,8 +49,11 @@ jobs:
                   page=urllib.request.urlopen(base,timeout=20).read().decode()
                   assert '投资情报中心' in page
                   data=json.load(urllib.request.urlopen(base+'data/index.json',timeout=20))
+                  local=json.load(open('site/data/index.json'))
+                  assert data==local, 'Published news JSON is not the deployed version yet'
+                  chinese=sum(bool(e.get('translation') or e.get('analysis')) for e in data['events'])
                   status=json.load(urllib.request.urlopen(base+'data/status.json',timeout=20))
-                  print(f"::notice title=Public website verified::{base} HTTP 200; events={len(data['events'])}; last_collection={status.get('last_success_at')}; ai_mode={status.get('ai_mode')}")
+                  print(f"::notice title=Public website verified::{base} HTTP 200; events={len(data['events'])}; last_collection={status.get('last_success_at')}; ai_mode={status.get('ai_mode')}; chinese_events={chinese}")
                   break
               except Exception:
                   if attempt==5: raise
