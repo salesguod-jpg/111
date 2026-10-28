@@ -1,0 +1,39 @@
+name: Deploy Pages
+on:
+  push:
+    branches: [main]
+    paths: ['site/**', '.github/workflows/pages.yml']
+  workflow_dispatch:
+  workflow_call:
+permissions: {}
+concurrency:
+  group: pages-deployment
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/configure-pages@v5
+      - name: Check static site and size
+        run: |
+          python -m json.tool site/data/index.json > /dev/null
+          python -m json.tool site/data/status.json > /dev/null
+          test -f site/index.html
+          test "$(du -sm site | cut -f1)" -lt 50
+          date -u +'%Y-%m-%dT%H:%M:%SZ' > site/deployed-at.txt
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - uses: actions/deploy-pages@v4
+        id: deploy

@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%23176b61%27/%3E%3Cpath d=%27M7 22L13 15L18 18L25 9%27 stroke=%27white%27 fill=%27none%27 stroke-width=%273%27/%3E%3C/svg%3E"><title>投资情报中心</title><link rel="stylesheet" href="style.css"></head>
+<body><header><a class="brand" href="./">◈ 投资情报中心</a><div><span class="tag">个人研究 · 公开信息</span><button id="theme" aria-label="切换明暗主题">◐ 主题</button></div></header>
+<main><section class="hero"><span class="eyebrow">INVESTMENT INTELLIGENCE HUB</span><h1>关注事实，理解变化。</h1><p>从公司经营到宏观政策，沉淀值得长期关注的投资信息。</p><div id="times" class="muted">正在读取运行状态…</div></section>
+<div class="notice">资讯与 AI 分析仅供研究参考，不构成投资建议。AI 可能出错，请核实原始出处。所有时间为北京时间。</div>
+<nav id="topics" aria-label="专题分类"></nav>
+<section class="toolbar"><input id="search" type="search" placeholder="搜索公司、关键词或事件" aria-label="搜索新闻"><select id="grade" aria-label="重要性"><option value="">全部重要性（隐藏 C）</option><option>S</option><option>A</option><option>B</option><option>C</option></select><input id="date" type="date" aria-label="按日期查询"><select id="archive" aria-label="历史归档"><option value="">最新资讯</option></select></section>
+<section id="important"></section><section><div class="section-title"><h2 id="list-title">最新全部资讯</h2><span id="count" class="muted"></span></div><div id="list" class="grid" aria-live="polite"></div></section>
+<details class="health"><summary>运行状态与新闻来源</summary><p>采集状态更新保存在仓库中；网页状态随下一次有效内容发布更新。Actions 日志是最新运行依据。</p><div id="health"></div></details>
+<footer>只保留短摘录与来源链接 · 不提供实时行情 · 未经 AI 分析的新闻不授予重要性评级</footer></main>
+<dialog id="detail"><button id="close" class="close">关闭 ×</button><article id="detail-body"></article></dialog><script src="app.js" defer></script></body></html>

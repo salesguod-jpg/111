@@ -1,0 +1,79 @@
+name: Collect news
+on:
+  schedule:
+    - cron: '7,17,27,37,47,57 * * * *'
+  workflow_dispatch:
+permissions: {}
+concurrency:
+  group: news-collection
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    permissions:
+      contents: write
+    outputs:
+      changed: ${{ steps.collect.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.lock.txt
+      - run: python -m unittest discover -s tests -v
+      - uses: actions/cache/restore@v4
+        with:
+          path: .runtime/feeds.json
+          key: feed-checkpoints-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: feed-checkpoints-
+      - id: collect
+        name: Collect and persist incrementally
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+        run: python scripts/collect.py
+      - name: Commit durable state (no automatic workflow recursion)
+        if: always() && steps.collect.outputs.persist == 'true'
+        run: |
+          git config user.name 'investment-hub[bot]'
+          git config user.email 'investment-hub[bot]@users.noreply.github.com'
+          git add site/data state
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: incremental news and collection checkpoint'
+            git push origin HEAD:main
+          fi
+      - uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: .runtime/feeds.json
+          key: feed-checkpoints-${{ github.run_id }}-${{ github.run_attempt }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: collection-status-${{ github.run_id }}
+          path: site/data/status.json
+          retention-days: 14
+      - name: Summarize actual collection
+        if: always()
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          s=json.load(open('site/data/status.json'))
+          print('## 采集结果\n')
+          for k,v in s['sources'].items(): print(f"- {k}: {v['state']}")
+          print(f"\n新增事件：{s['new_events']}；AI 调用：{s['ai_calls']}")
+          if not s.get('last_success_at'): print('\n⚠ 尚无成功采集记录，请检查来源。')
+          PY
+  deploy:
+    needs: collect
+    if: needs.collect.outputs.changed == 'true'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/pages.yml

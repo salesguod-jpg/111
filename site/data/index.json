@@ -1,0 +1,107 @@
+{
+  "archives": [],
+  "events": [],
+  "topics": [
+    {
+      "enabled": true,
+      "id": "maotai",
+      "keywords": [
+        "贵州茅台",
+        "600519",
+        "茅台",
+        "Moutai"
+      ],
+      "name": "贵州茅台",
+      "weight": 10
+    },
+    {
+      "enabled": true,
+      "id": "midea",
+      "keywords": [
+        "美的集团",
+        "000333",
+        "Midea"
+      ],
+      "name": "美的集团",
+      "weight": 10
+    },
+    {
+      "enabled": true,
+      "id": "china",
+      "keywords": [
+        "中国",
+        "央行",
+        "财政",
+        "货币政策",
+        "社会融资",
+        "通胀",
+        "China",
+        "PBOC"
+      ],
+      "name": "中国宏观",
+      "weight": 9
+    },
+    {
+      "enabled": true,
+      "id": "us",
+      "keywords": [
+        "Federal Reserve",
+        "FOMC",
+        "inflation",
+        "employment",
+        "interest rate",
+        "payroll",
+        "CPI",
+        "PCE",
+        "Nasdaq",
+        "S&P",
+        "美国",
+        "美联储"
+      ],
+      "name": "美国经济与美股",
+      "weight": 7
+    },
+    {
+      "enabled": true,
+      "id": "shenzhen",
+      "keywords": [
+        "深圳",
+        "龙华",
+        "红山",
+        "住房贷款",
+        "购房"
+      ],
+      "name": "深圳房地产",
+      "weight": 7
+    },
+    {
+      "enabled": true,
+      "id": "global",
+      "keywords": [
+        "tariff",
+        "trade",
+        "financial stability",
+        "geopolitical",
+        "贸易",
+        "地缘",
+        "金融风险"
+      ],
+      "name": "全球重大事件",
+      "weight": 5
+    },
+    {
+      "enabled": true,
+      "id": "fx",
+      "keywords": [
+        "PHP",
+        "THB",
+        "Philippine",
+        "Thailand",
+        "比索",
+        "泰铢"
+      ],
+      "name": "汇率",
+      "weight": 3
+    }
+  ]
+}

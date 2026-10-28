@@ -1,0 +1,105 @@
+{
+  "actual_run_at": "2026-10-28T03:00:03.845522+00:00",
+  "ai_calls": 0,
+  "ai_mode": "disabled",
+  "last_ai_at": null,
+  "last_success_at": null,
+  "new_articles": 0,
+  "new_events": 0,
+  "registry": [
+    {
+      "enabled": true,
+      "id": "fed",
+      "kind": "rss",
+      "max_age_days": 30,
+      "min_interval_minutes": 30,
+      "name": "美联储官方新闻",
+      "rights": "官方 RSS；只存标题、链接和短摘录",
+      "status": "待网络验证",
+      "trust": 1.0,
+      "url": "https://www.federalreserve.gov/feeds/press_all.xml"
+    },
+    {
+      "enabled": true,
+      "id": "bls",
+      "kind": "rss",
+      "max_age_days": 30,
+      "min_interval_minutes": 60,
+      "name": "美国劳工统计局",
+      "rights": "官方 RSS；只存标题、链接和短摘录",
+      "status": "待网络验证",
+      "trust": 1.0,
+      "url": "https://www.bls.gov/feed/bls_latest.rss"
+    },
+    {
+      "enabled": false,
+      "id": "pbc",
+      "kind": "pending",
+      "name": "中国人民银行",
+      "status": "未接入：需验证访问规则及解析器",
+      "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/index.html"
+    },
+    {
+      "enabled": false,
+      "id": "stats",
+      "kind": "pending",
+      "name": "国家统计局",
+      "status": "未接入：需验证页面解析",
+      "url": "https://www.stats.gov.cn/sj/zxfb/"
+    },
+    {
+      "enabled": false,
+      "id": "sse",
+      "kind": "pending",
+      "name": "上交所及贵州茅台公告",
+      "status": "未接入：需稳定公开公告接口",
+      "url": "https://www.sse.com.cn/"
+    },
+    {
+      "enabled": false,
+      "id": "midea",
+      "kind": "pending",
+      "name": "美的集团公告",
+      "status": "未接入：需验证公开接口使用条件",
+      "url": "https://www.cninfo.com.cn/"
+    },
+    {
+      "enabled": false,
+      "id": "mof",
+      "kind": "pending",
+      "name": "财政部",
+      "status": "未接入",
+      "url": "https://www.mof.gov.cn/"
+    },
+    {
+      "enabled": false,
+      "id": "sz",
+      "kind": "pending",
+      "name": "深圳住房官方信息",
+      "status": "未接入：尚无区域成交数据接口",
+      "url": "https://www.sz.gov.cn/cn/xxgk/zfxxgj/zcfg/"
+    },
+    {
+      "enabled": false,
+      "id": "fx",
+      "kind": "pending",
+      "name": "PHP / THB 汇率",
+      "status": "未接入：无已验证汇率数据源",
+      "url": "https://www.bsp.gov.ph/"
+    }
+  ],
+  "scheduled_at": null,
+  "sources": {
+    "bls": {
+      "error": "ProxyError",
+      "last_success": null,
+      "state": "failed"
+    },
+    "fed": {
+      "error": "ProxyError",
+      "last_success": null,
+      "state": "failed"
+    }
+  },
+  "usage": {}
+}
