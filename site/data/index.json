@@ -6,6 +6,26 @@
   "events": [
     {
       "analysis": null,
+      "collected_at": "2026-10-28T18:00:56.503232+00:00",
+      "development": false,
+      "excerpt": "Federal Reserve issues FOMC statement",
+      "id": "a0c3e1be77e8b5a27f797ac2",
+      "original_title": "Federal Reserve issues FOMC statement",
+      "published_at": "2026-10-28T18:00:00+00:00",
+      "sources": [
+        {
+          "name": "美联储官方新闻",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+        }
+      ],
+      "topics": [
+        "us"
+      ],
+      "updated_at": "2026-10-28T18:00:56.503237+00:00",
+      "weight": 7
+    },
+    {
+      "analysis": null,
       "collected_at": "2026-10-28T03:18:34.810115+00:00",
       "development": false,
       "excerpt": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
