@@ -1,5 +1,8 @@
 name: Collect news
 on:
+  push:
+    branches: [main]
+    paths: ['config/**', 'scripts/collect.py', 'scripts/probe_sources.py', '.github/workflows/collect.yml']
   schedule:
     - cron: '7,17,27,37,47,57 * * * *'
   workflow_dispatch:
@@ -31,6 +34,9 @@ jobs:
           path: .runtime/feeds.json
           key: feed-checkpoints-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: feed-checkpoints-
+      - name: Probe official RSS endpoints on the actual GitHub runner
+        if: github.event_name != 'schedule'
+        run: python scripts/probe_sources.py
       - id: collect
         name: Collect and persist incrementally
         env:

@@ -152,7 +152,10 @@ def run(root=ROOT):
             cache.update(etag=response.headers.get('ETag'),modified=response.headers.get('Last-Modified'),last_success=now())
             status['sources'][source['id']]={'state':'ok','entries':len(feed.entries),'accepted':added,'last_success':cache['last_success']}; successes+=1
         except (requests.RequestException,ValueError) as exc:
-            status['sources'][source['id']]={'state':'failed','error':type(exc).__name__,'last_success':cache.get('last_success')}
+            status['sources'][source['id']]={'state':'failed','error':type(exc).__name__,'http_status':getattr(getattr(exc,'response',None),'status_code',None),'last_success':cache.get('last_success')}
+    for source_id, result in status['sources'].items():
+        level='warning' if result['state']=='failed' else 'notice'
+        print(f"::{level} title=News source {source_id}::{json.dumps(result,ensure_ascii=True)}")
     calls_before=sum(x['calls'] for x in state['usage'].values())
     for event in sorted(events,key=lambda e:-e['weight']): analyze(event,state,settings,session)
     status['ai_calls']=sum(x['calls'] for x in state['usage'].values())-calls_before
