@@ -37,3 +37,22 @@ jobs:
           path: site
       - uses: actions/deploy-pages@v4
         id: deploy
+      - name: Verify the deployed public website
+        env:
+          SITE_URL: ${{ steps.deploy.outputs.page_url }}
+        run: |
+          python - <<'PYVERIFY'
+          import json, os, time, urllib.request
+          base=os.environ['SITE_URL'].rstrip('/')+'/'
+          for attempt in range(6):
+              try:
+                  page=urllib.request.urlopen(base,timeout=20).read().decode()
+                  assert '投资情报中心' in page
+                  data=json.load(urllib.request.urlopen(base+'data/index.json',timeout=20))
+                  status=json.load(urllib.request.urlopen(base+'data/status.json',timeout=20))
+                  print(f"::notice title=Public website verified::{base} HTTP 200; events={len(data['events'])}; last_collection={status.get('last_success_at')}; ai_mode={status.get('ai_mode')}")
+                  break
+              except Exception:
+                  if attempt==5: raise
+                  time.sleep(5)
+          PYVERIFY
