@@ -1,0 +1,23 @@
+[
+  {
+    "analysis": null,
+    "collected_at": "2026-10-28T03:18:34.811673+00:00",
+    "development": false,
+    "excerpt": "Federal Reserve Board finalizes changes to enhance the transparency and public accountability of its stress test and reduce volatility in its stress test-related capital requirements",
+    "id": "2d126dcc2a0a42d34ad94001",
+    "original_title": "Federal Reserve Board finalizes changes to enhance the transparency and public accountability of its stress test and reduce volatility in its stress test-related capital requirements",
+    "published_at": "2026-09-30T13:00:00+00:00",
+    "sources": [
+      {
+        "name": "美联储官方新闻",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260930a.htm"
+      }
+    ],
+    "topics": [
+      "us"
+    ],
+    "updated_at": "2026-10-28T03:18:34.811676+00:00",
+    "version": "68df5c2c2faaa597600514b9",
+    "weight": 7
+  }
+]

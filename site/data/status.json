@@ -1,11 +1,11 @@
 {
-  "actual_run_at": "2026-10-28T03:00:03.845522+00:00",
+  "actual_run_at": "2026-10-28T03:18:34.715883+00:00",
   "ai_calls": 0,
   "ai_mode": "disabled",
   "last_ai_at": null,
-  "last_success_at": null,
-  "new_articles": 0,
-  "new_events": 0,
+  "last_success_at": "2026-10-28T03:18:34.845424+00:00",
+  "new_articles": 8,
+  "new_events": 8,
   "registry": [
     {
       "enabled": true,
@@ -15,19 +15,31 @@
       "min_interval_minutes": 30,
       "name": "美联储官方新闻",
       "rights": "官方 RSS；只存标题、链接和短摘录",
-      "status": "待网络验证",
+      "status": "已验证：GitHub Actions HTTP 200，20 条 RSS；2026-10-28",
       "trust": 1.0,
       "url": "https://www.federalreserve.gov/feeds/press_all.xml"
     },
     {
       "enabled": true,
+      "id": "fed_monetary",
+      "kind": "rss",
+      "max_age_days": 30,
+      "min_interval_minutes": 30,
+      "name": "美联储货币政策官方公告",
+      "rights": "官方公开 RSS；仅标题、链接与短摘录",
+      "status": "已验证：GitHub Actions HTTP 200，15 条 RSS；2026-10-28",
+      "trust": 1.0,
+      "url": "https://www.federalreserve.gov/feeds/press_monetary.xml"
+    },
+    {
+      "enabled": false,
       "id": "bls",
       "kind": "rss",
       "max_age_days": 30,
       "min_interval_minutes": 60,
       "name": "美国劳工统计局",
       "rights": "官方 RSS；只存标题、链接和短摘录",
-      "status": "待网络验证",
+      "status": "未接入：GitHub Actions 返回 Akamai HTTP 403（2026-10-28），不绕过限制",
       "trust": 1.0,
       "url": "https://www.bls.gov/feed/bls_latest.rss"
     },
@@ -90,15 +102,17 @@
   ],
   "scheduled_at": null,
   "sources": {
-    "bls": {
-      "error": "ProxyError",
-      "last_success": null,
-      "state": "failed"
-    },
     "fed": {
-      "error": "ProxyError",
-      "last_success": null,
-      "state": "failed"
+      "accepted": 8,
+      "entries": 20,
+      "last_success": "2026-10-28T03:18:34.811714+00:00",
+      "state": "ok"
+    },
+    "fed_monetary": {
+      "accepted": 0,
+      "entries": 15,
+      "last_success": "2026-10-28T03:18:34.845224+00:00",
+      "state": "ok"
     }
   },
   "usage": {}
