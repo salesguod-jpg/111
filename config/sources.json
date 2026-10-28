@@ -24,6 +24,18 @@
     "rights": "官方公开 RSS；仅标题、链接与短摘录"
   },
   {
+    "id": "bea",
+    "name": "美国经济分析局 BEA",
+    "url": "https://apps.bea.gov/rss/rss.xml",
+    "enabled": true,
+    "kind": "rss",
+    "trust": 1.0,
+    "min_interval_minutes": 60,
+    "max_age_days": 30,
+    "status": "已验证：GitHub Actions HTTP 200，48 条 RSS；2026-10-28",
+    "rights": "官方公开 RSS；仅标题、链接与短摘录"
+  },
+  {
     "id": "bls",
     "name": "美国劳工统计局",
     "url": "https://www.bls.gov/feed/bls_latest.rss",

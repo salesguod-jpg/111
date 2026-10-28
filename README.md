@@ -4,13 +4,13 @@
 
 ## 当前交付状态（2026-10-28）
 
-这是可运行的 MVP，**不是已验证上线的完整情报服务**。
+网站已由 GitHub Actions 完成真实采集、提交与 Pages 部署。地址：https://salesguod-jpg.github.io/111/ 。尚不是覆盖所有目标领域的完整情报服务。
 
 - 已实现：七类可配置关注领域、RSS 独立采集、条件请求与访问间隔、URL/标题/数值保守去重、稳定事件 ID、多来源链接、原 URL 内容更新标记、月归档、搜索/日期/分类/重要性筛选、明暗主题、手机布局、AI 费用和重试限制、JSON Schema、无 AI 降级。
 - 已实现工作流：UTC `7,17,27,37,47,57 * * * *`，手动采集、串行增量持久化、Pages 官方部署、测试。全部来源失败会明确失败，不将触发成功当成采集成功。
-- **真实来源验证未通过**：美联储、美国劳工统计局、欧洲央行、人民银行、国家统计局和深圳政府请求在当前云环境代理处受阻（美联储明确返回 CONNECT 403）。美联储和 BLS 已有 RSS 适配器，但无成功采集记录；其他来源明确标为未接入。公开数据目前没有任何新闻，未填充示例新闻。
+- **GitHub Actions 真实来源已验证**：美联储综合 RSS HTTP 200 / 20 条，美联储货币政策 RSS HTTP 200 / 15 条，BEA 官方 RSS HTTP 200 / 48 条。首次完整采集新增 8 条真实事件，自动提交 `4b177fe` 并部署。BLS 和劳工部 RSS 返回 Akamai 403，BLS 已停用；不绕过访问限制。其他中国官方、公司公告及汇率源仍未接入。Codex 代理错误与 GitHub 运行器的来源结果分别记录，不能混为一谈。
 - 14 项 Python 测试及系统 Chromium 桌面/手机交互测试通过。测试中的来源、AI 响应与事件为隔离夹具，不是联网成功证据。
-- 未验证：真实 OpenAI Responses 调用、GitHub Actions 实际执行、Pages 线上访问。详见本次交付报告。
+- 已验证采集及自动 Pages 部署工作流：https://github.com/salesguod-jpg/111/actions/runs/40625921467 。AI 在 GitHub Actions 中为 `disabled`，调用 0 次；真实 OpenAI Responses 调用尚未验证。部署后另有公开首页与 JSON HTTP 检查步骤，结果见最新 Deploy Pages 的 Public website verified 注释。
 - 未实现：跨语言/语义事件聚合、不同 URL 下新增事实的自动归并、官方公告 HTML/API 适配、深圳红山成交数据、PHP/THB 行情、正式告警通知。相似标题仅在 72 小时内且数值一致时聚合；不同表述可能保留为不同事件，需要人工核实。
 
 ## 新手部署：现有仓库 111
@@ -20,7 +20,7 @@
 3. 打开 **Settings → Actions → General**，允许本仓库使用 GitHub Actions；组织策略需允许 `contents: write` 和官方 Pages Actions。仓库应为 Public，避免套餐限制。
 4. 打开 **Actions → Tests** 检查测试。打开 **Collect news → Run workflow → main → Run workflow**，点进运行的 Collect 步骤查看 `successful_sources` 和摘要。只有来源状态 `ok` / `not_modified` 才表示来源请求成功；检查是否确实有新增事件。
 5. 打开 **Actions → Deploy Pages → Run workflow** 完成首次部署。如果采集成功且公开内容有变化，后续会自动调用部署。无需每十分钟重建前端。
-6. 部署成功后，在 Pages 设置中复制实际地址。此仓库预期地址为 **https://salesguod-jpg.github.io/111/**，当前尚未验证上线。所有资源使用相对路径，兼容仓库子目录。
+6. 部署成功后，在 Pages 设置中复制实际地址。此仓库预期地址为 **https://salesguod-jpg.github.io/111/**，已完成一次成功部署；公开 HTTP 检查结果见最新部署工作流。所有资源使用相对路径，兼容仓库子目录。
 
 需求示例的 `/investment-intelligence-hub/` 只有在仓库使用该名称时才适用。若希望使用该路径，请在 Settings → General → Repository name 重命名仓库，再检查 Pages 给出的地址；本项目无需修改 base path。
 
