@@ -57,6 +57,27 @@
   },
   {
     "analysis": null,
+    "collected_at": "2026-10-29T21:10:16.156556+00:00",
+    "development": false,
+    "excerpt": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
+    "id": "41690a4ebc45cddae668868f",
+    "original_title": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
+    "published_at": "2026-10-29T20:30:00+00:00",
+    "sources": [
+      {
+        "name": "美联储官方新闻",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261029a.htm"
+      }
+    ],
+    "topics": [
+      "us"
+    ],
+    "updated_at": "2026-10-29T21:10:16.156561+00:00",
+    "version": "15b6eef64356dded65a8b09e",
+    "weight": 7
+  },
+  {
+    "analysis": null,
     "collected_at": "2026-10-28T03:20:10.243593+00:00",
     "development": false,
     "excerpt": "The U.S. goods and services trade deficit increased in August 2026 according to the U.S. Bureau of Economic Analysis and the U.S. Census Bureau. The deficit increased from $92.8 billion in July (revised) to $105.6 billion in August, as imports increased more than exports. The goods deficit increased $12.8 billion in August to $136.6 billion. The services surplus increased less than $0.1 billion in",

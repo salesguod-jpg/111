@@ -2,21 +2,21 @@
   "attempts": {},
   "feeds": {
     "bea": {
-      "checked_at": "2026-10-29T13:13:37.706823+00:00",
+      "checked_at": "2026-10-29T21:10:16.193747+00:00",
       "etag": "\"73c4b39a167dd1:0\"",
-      "last_success": "2026-10-29T13:13:37.944380+00:00",
+      "last_success": "2026-10-29T21:10:16.485761+00:00",
       "modified": "Thu, 29 Oct 2026 12:30:03 GMT"
     },
     "fed": {
-      "checked_at": "2026-10-29T13:13:37.491793+00:00",
-      "etag": "W/\"2aa2ad2f667dd1:0\"",
-      "last_success": "2026-10-29T13:13:37.634635+00:00",
-      "modified": "Wed, 28 Oct 2026 18:00:15 GMT"
+      "checked_at": "2026-10-29T21:10:15.964324+00:00",
+      "etag": "W/\"4654ee50e467dd1:0\"",
+      "last_success": "2026-10-29T21:10:16.156867+00:00",
+      "modified": "Thu, 29 Oct 2026 20:30:19 GMT"
     },
     "fed_monetary": {
-      "checked_at": "2026-10-29T13:13:37.634659+00:00",
+      "checked_at": "2026-10-29T21:10:16.156882+00:00",
       "etag": "W/\"72e12f31667dd1:0\"",
-      "last_success": "2026-10-29T13:13:37.706803+00:00",
+      "last_success": "2026-10-29T21:10:16.193720+00:00",
       "modified": "Wed, 28 Oct 2026 18:00:18 GMT"
     }
   },
@@ -25,6 +25,7 @@
     "0d84bbab316fddb29a8359e7": "f52dfc83e5c37dff62f1662d",
     "1bc4132b3f0326c5bc0edadf": "78991ddbc6d237ea7f117248",
     "2d126dcc2a0a42d34ad94001": "68df5c2c2faaa597600514b9",
+    "41690a4ebc45cddae668868f": "15b6eef64356dded65a8b09e",
     "4831fe84d950aaad2046ee74": "f093610265cc0fec03656eb4",
     "53e78c0da57b8ce9c5542c3c": "79ae295aae1532a0e60a9562",
     "5d4b355ec3292efce1cfee3e": "a69961a95b677fd1f18987df",
