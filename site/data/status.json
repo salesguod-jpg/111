@@ -1,11 +1,11 @@
 {
-  "actual_run_at": "2026-10-28T18:00:56.392369+00:00",
+  "actual_run_at": "2026-10-29T13:13:37.491762+00:00",
   "ai_calls": 0,
   "ai_mode": "disabled",
   "last_ai_at": null,
-  "last_success_at": "2026-10-28T18:00:56.545536+00:00",
-  "new_articles": 1,
-  "new_events": 1,
+  "last_success_at": "2026-10-29T13:13:37.944670+00:00",
+  "new_articles": 2,
+  "new_events": 2,
   "registry": [
     {
       "enabled": true,
@@ -112,24 +112,22 @@
       "url": "https://www.bsp.gov.ph/"
     }
   ],
-  "scheduled_at": "2026-10-28T17:57:00+00:00",
+  "scheduled_at": "2026-10-29T13:07:00+00:00",
   "scheduled_at_is_estimate": true,
   "sources": {
     "bea": {
-      "last_success": "2026-10-28T17:15:05.343801+00:00",
-      "state": "rate_limited"
+      "accepted": 2,
+      "entries": 49,
+      "last_success": "2026-10-29T13:13:37.944380+00:00",
+      "state": "ok"
     },
     "fed": {
-      "accepted": 1,
-      "entries": 20,
-      "last_success": "2026-10-28T18:00:56.503456+00:00",
-      "state": "ok"
+      "last_success": "2026-10-29T13:13:37.634635+00:00",
+      "state": "not_modified"
     },
     "fed_monetary": {
-      "accepted": 0,
-      "entries": 15,
-      "last_success": "2026-10-28T18:00:56.545212+00:00",
-      "state": "ok"
+      "last_success": "2026-10-29T13:13:37.706803+00:00",
+      "state": "not_modified"
     }
   },
   "usage": {}

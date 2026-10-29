@@ -6,6 +6,46 @@
   "events": [
     {
       "analysis": null,
+      "collected_at": "2026-10-29T13:13:37.944171+00:00",
+      "development": false,
+      "excerpt": "Real gross domestic product (GDP) increased at an annual rate of 3.4 percent in the third quarter of 2026 (July, August, and September), according to the advance estimate released today by the U.S. Bureau of Economic Analysis (BEA). In the second quarter, real GDP increased 2.2 percent. The contributors to the increase in real GDP in the third quarter were increases in investment, consumer spendin",
+      "id": "aeb9f5365fde19f44e2313c2",
+      "original_title": "GDP (Advance Estimate), 3rd Quarter 2026",
+      "published_at": "2026-10-29T12:30:00+00:00",
+      "sources": [
+        {
+          "name": "美国经济分析局 BEA",
+          "url": "https://www.bea.gov/news/2026/gdp-advance-estimate-3rd-quarter-2026"
+        }
+      ],
+      "topics": [
+        "us"
+      ],
+      "updated_at": "2026-10-29T13:13:37.944174+00:00",
+      "weight": 7
+    },
+    {
+      "analysis": null,
+      "collected_at": "2026-10-29T13:13:37.944315+00:00",
+      "development": false,
+      "excerpt": "Personal income increased $54.5 billion (0.2 percent at a monthly rate) in September, according to estimates released today by the U.S. Bureau of Economic Analysis (BEA). Disposable personal income (DPI)–personal income less personal current taxes–increased $52.7 billion (0.2 percent), and personal consumption expenditures (PCE) increased $113.1 billion (0.5 percent). Personal outlays–the sum of P",
+      "id": "ed83cb0bc28656a36c6f39d9",
+      "original_title": "Personal Income and Outlays, September 2026",
+      "published_at": "2026-10-29T12:30:00+00:00",
+      "sources": [
+        {
+          "name": "美国经济分析局 BEA",
+          "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026"
+        }
+      ],
+      "topics": [
+        "us"
+      ],
+      "updated_at": "2026-10-29T13:13:37.944331+00:00",
+      "weight": 7
+    },
+    {
+      "analysis": null,
       "collected_at": "2026-10-28T18:00:56.503232+00:00",
       "development": false,
       "excerpt": "Federal Reserve issues FOMC statement",
