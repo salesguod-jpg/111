@@ -1,9 +1,31 @@
 {
   "archives": [
+    "2026-11",
     "2026-10",
     "2026-09"
   ],
   "events": [
+    {
+      "analysis": null,
+      "collected_at": "2026-11-04T14:18:15.924791+00:00",
+      "development": false,
+      "excerpt": "The U.S. goods and services trade deficit decreased in September 2026 according to the U.S. Bureau of Economic Analysis and the U.S. Census Bureau. The deficit decreased from $105.7 billion in August (revised) to $105.0 billion in September, as exports increased more than imports. The goods deficit decreased $0.7 billion in September to $135.9 billion. The services surplus decreased less than $0.1",
+      "id": "9cc53e9eda9e7cde36049753",
+      "original_title": "U.S. International Trade in Goods and Services, September 2026",
+      "published_at": "2026-11-04T13:30:00+00:00",
+      "sources": [
+        {
+          "name": "美国经济分析局 BEA",
+          "url": "https://www.bea.gov/news/2026/us-international-trade-goods-and-services-september-2026"
+        }
+      ],
+      "topics": [
+        "us",
+        "global"
+      ],
+      "updated_at": "2026-11-04T14:18:15.924794+00:00",
+      "weight": 7
+    },
     {
       "analysis": null,
       "collected_at": "2026-10-29T21:10:16.156556+00:00",
