@@ -1,6 +1,27 @@
 [
   {
     "analysis": null,
+    "collected_at": "2026-11-05T16:49:50.488012+00:00",
+    "development": false,
+    "excerpt": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
+    "id": "2993c3bddd49024d05647913",
+    "original_title": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
+    "published_at": "2026-11-05T16:00:00+00:00",
+    "sources": [
+      {
+        "name": "美联储官方新闻",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm"
+      }
+    ],
+    "topics": [
+      "us"
+    ],
+    "updated_at": "2026-11-05T16:49:50.488016+00:00",
+    "version": "b4455ca875c8ab92fed20942",
+    "weight": 7
+  },
+  {
+    "analysis": null,
     "collected_at": "2026-11-04T14:18:15.924791+00:00",
     "development": false,
     "excerpt": "The U.S. goods and services trade deficit decreased in September 2026 according to the U.S. Bureau of Economic Analysis and the U.S. Census Bureau. The deficit decreased from $105.7 billion in August (revised) to $105.0 billion in September, as exports increased more than imports. The goods deficit decreased $0.7 billion in September to $135.9 billion. The services surplus decreased less than $0.1",
