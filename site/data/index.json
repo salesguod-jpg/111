@@ -7,6 +7,26 @@
   "events": [
     {
       "analysis": null,
+      "collected_at": "2026-11-09T21:26:12.458521+00:00",
+      "development": false,
+      "excerpt": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
+      "id": "2bae0dc9f043ef9596120d48",
+      "original_title": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
+      "published_at": "2026-11-09T21:00:00+00:00",
+      "sources": [
+        {
+          "name": "美联储官方新闻",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261109a.htm"
+        }
+      ],
+      "topics": [
+        "us"
+      ],
+      "updated_at": "2026-11-09T21:26:12.458526+00:00",
+      "weight": 7
+    },
+    {
+      "analysis": null,
       "collected_at": "2026-11-05T16:49:50.488012+00:00",
       "development": false,
       "excerpt": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
