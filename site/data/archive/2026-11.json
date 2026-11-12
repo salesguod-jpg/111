@@ -43,6 +43,27 @@
   },
   {
     "analysis": null,
+    "collected_at": "2026-11-12T18:25:41.268825+00:00",
+    "development": false,
+    "excerpt": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+    "id": "87a784bdd6110f05671301f1",
+    "original_title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+    "published_at": "2026-11-12T17:45:00+00:00",
+    "sources": [
+      {
+        "name": "美联储官方新闻",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm"
+      }
+    ],
+    "topics": [
+      "us"
+    ],
+    "updated_at": "2026-11-12T18:25:41.268830+00:00",
+    "version": "38326e3d2dbc57be9d8d1dbd",
+    "weight": 7
+  },
+  {
+    "analysis": null,
     "collected_at": "2026-11-04T14:18:15.924791+00:00",
     "development": false,
     "excerpt": "The U.S. goods and services trade deficit decreased in September 2026 according to the U.S. Bureau of Economic Analysis and the U.S. Census Bureau. The deficit decreased from $105.7 billion in August (revised) to $105.0 billion in September, as exports increased more than imports. The goods deficit decreased $0.7 billion in September to $135.9 billion. The services surplus decreased less than $0.1",
