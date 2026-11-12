@@ -7,6 +7,26 @@
   "events": [
     {
       "analysis": null,
+      "collected_at": "2026-11-12T16:28:32.040951+00:00",
+      "development": false,
+      "excerpt": "Federal Reserve Board issues enforcement action with former employee of United Community Bank",
+      "id": "e589a1e1c99ea10e62c21fe5",
+      "original_title": "Federal Reserve Board issues enforcement action with former employee of United Community Bank",
+      "published_at": "2026-11-12T16:00:00+00:00",
+      "sources": [
+        {
+          "name": "美联储官方新闻",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261112a.htm"
+        }
+      ],
+      "topics": [
+        "us"
+      ],
+      "updated_at": "2026-11-12T16:28:32.040954+00:00",
+      "weight": 7
+    },
+    {
+      "analysis": null,
       "collected_at": "2026-11-09T21:26:12.458521+00:00",
       "development": false,
       "excerpt": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",

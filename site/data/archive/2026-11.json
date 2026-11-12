@@ -62,5 +62,26 @@
     "updated_at": "2026-11-04T14:18:15.924794+00:00",
     "version": "e2e6ba97b38ad3718c62b854",
     "weight": 7
+  },
+  {
+    "analysis": null,
+    "collected_at": "2026-11-12T16:28:32.040951+00:00",
+    "development": false,
+    "excerpt": "Federal Reserve Board issues enforcement action with former employee of United Community Bank",
+    "id": "e589a1e1c99ea10e62c21fe5",
+    "original_title": "Federal Reserve Board issues enforcement action with former employee of United Community Bank",
+    "published_at": "2026-11-12T16:00:00+00:00",
+    "sources": [
+      {
+        "name": "美联储官方新闻",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261112a.htm"
+      }
+    ],
+    "topics": [
+      "us"
+    ],
+    "updated_at": "2026-11-12T16:28:32.040954+00:00",
+    "version": "33db4de6b7961ae9c8fa18c5",
+    "weight": 7
   }
 ]
