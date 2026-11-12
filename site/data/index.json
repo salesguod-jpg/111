@@ -7,6 +7,26 @@
   "events": [
     {
       "analysis": null,
+      "collected_at": "2026-11-12T19:26:32.028765+00:00",
+      "development": false,
+      "excerpt": "Federal Reserve Board announces pricing, effective January 1, 2027, for payment services the Federal Reserve Banks provide to banks and credit unions, and changes to streamline and adjust their check services",
+      "id": "1ee6867cdbb6f3c3818c41cf",
+      "original_title": "Federal Reserve Board announces pricing, effective January 1, 2027, for payment services the Federal Reserve Banks provide to banks and credit unions, and changes to streamline and adjust their check services",
+      "published_at": "2026-11-12T18:30:00+00:00",
+      "sources": [
+        {
+          "name": "美联储官方新闻",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261112a.htm"
+        }
+      ],
+      "topics": [
+        "us"
+      ],
+      "updated_at": "2026-11-12T19:26:32.028767+00:00",
+      "weight": 7
+    },
+    {
+      "analysis": null,
       "collected_at": "2026-11-12T18:25:41.268825+00:00",
       "development": false,
       "excerpt": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",

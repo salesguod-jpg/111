@@ -1,6 +1,27 @@
 [
   {
     "analysis": null,
+    "collected_at": "2026-11-12T19:26:32.028765+00:00",
+    "development": false,
+    "excerpt": "Federal Reserve Board announces pricing, effective January 1, 2027, for payment services the Federal Reserve Banks provide to banks and credit unions, and changes to streamline and adjust their check services",
+    "id": "1ee6867cdbb6f3c3818c41cf",
+    "original_title": "Federal Reserve Board announces pricing, effective January 1, 2027, for payment services the Federal Reserve Banks provide to banks and credit unions, and changes to streamline and adjust their check services",
+    "published_at": "2026-11-12T18:30:00+00:00",
+    "sources": [
+      {
+        "name": "美联储官方新闻",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261112a.htm"
+      }
+    ],
+    "topics": [
+      "us"
+    ],
+    "updated_at": "2026-11-12T19:26:32.028767+00:00",
+    "version": "b57a7cc74fc1b7c623908b53",
+    "weight": 7
+  },
+  {
+    "analysis": null,
     "collected_at": "2026-11-05T16:49:50.488012+00:00",
     "development": false,
     "excerpt": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
