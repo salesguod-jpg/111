@@ -107,6 +107,27 @@
   },
   {
     "analysis": null,
+    "collected_at": "2026-11-18T16:38:18.553990+00:00",
+    "development": false,
+    "excerpt": "The value added of the outdoor recreation economy accounted for 2.3 percent ($704.2 billion) of current-dollar gross domestic product (GDP) for the nation in 2025. Across states and the District of Columbia, value added for outdoor recreation as a share of state GDP ranged from 6.1 percent in Hawaii to 1.0 percent in the District of Columbia.",
+    "id": "a27da5e95d17f65a053f301b",
+    "original_title": "Outdoor Recreation Economic Statistics, U.S. and States, 2025",
+    "published_at": "2026-11-18T15:00:00+00:00",
+    "sources": [
+      {
+        "name": "美国经济分析局 BEA",
+        "url": "https://www.bea.gov/news/2026/outdoor-recreation-economic-statistics-us-and-states-2025"
+      }
+    ],
+    "topics": [
+      "us"
+    ],
+    "updated_at": "2026-11-18T16:38:18.553994+00:00",
+    "version": "67d30a8b9f79c5fb7c2e5aa7",
+    "weight": 7
+  },
+  {
+    "analysis": null,
     "collected_at": "2026-11-12T16:28:32.040951+00:00",
     "development": false,
     "excerpt": "Federal Reserve Board issues enforcement action with former employee of United Community Bank",
