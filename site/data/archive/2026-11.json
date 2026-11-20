@@ -106,6 +106,27 @@
   },
   {
     "analysis": null,
+    "collected_at": "2026-11-20T21:24:32.245358+00:00",
+    "development": false,
+    "excerpt": "Federal Reserve announces College Fed Challenge winners",
+    "id": "6ffb3b6c56d4e0fb074188a0",
+    "original_title": "Federal Reserve announces College Fed Challenge winners",
+    "published_at": "2026-11-20T21:15:00+00:00",
+    "sources": [
+      {
+        "name": "美联储官方新闻",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261120b.htm"
+      }
+    ],
+    "topics": [
+      "us"
+    ],
+    "updated_at": "2026-11-20T21:24:32.245360+00:00",
+    "version": "cdad8aac61528e987bc0ba76",
+    "weight": 7
+  },
+  {
+    "analysis": null,
     "collected_at": "2026-11-12T18:25:41.268825+00:00",
     "development": false,
     "excerpt": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
