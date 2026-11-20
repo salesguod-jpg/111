@@ -85,6 +85,27 @@
   },
   {
     "analysis": null,
+    "collected_at": "2026-11-20T15:40:24.514928+00:00",
+    "development": false,
+    "excerpt": "Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances",
+    "id": "4b9813abbbbcba462a28480f",
+    "original_title": "Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances",
+    "published_at": "2026-11-20T15:00:00+00:00",
+    "sources": [
+      {
+        "name": "美联储官方新闻",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261120a.htm"
+      }
+    ],
+    "topics": [
+      "us"
+    ],
+    "updated_at": "2026-11-20T15:40:24.514937+00:00",
+    "version": "aa378ad1a5556cc7b8252259",
+    "weight": 7
+  },
+  {
+    "analysis": null,
     "collected_at": "2026-11-12T18:25:41.268825+00:00",
     "development": false,
     "excerpt": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",

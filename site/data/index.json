@@ -7,6 +7,26 @@
   "events": [
     {
       "analysis": null,
+      "collected_at": "2026-11-20T15:40:24.514928+00:00",
+      "development": false,
+      "excerpt": "Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances",
+      "id": "4b9813abbbbcba462a28480f",
+      "original_title": "Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances",
+      "published_at": "2026-11-20T15:00:00+00:00",
+      "sources": [
+        {
+          "name": "美联储官方新闻",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261120a.htm"
+        }
+      ],
+      "topics": [
+        "us"
+      ],
+      "updated_at": "2026-11-20T15:40:24.514937+00:00",
+      "weight": 7
+    },
+    {
+      "analysis": null,
       "collected_at": "2026-11-20T13:51:03.213407+00:00",
       "development": false,
       "excerpt": "Worldwide employment by U.S. multinational enterprises increased 0.9 percent to 44.2 million workers in 2024 (preliminary) from 43.8 million workers in 2023 (revised), according to statistics released today by the U.S. Bureau of Economic Analysis on the operations and finances of U.S. parent companies and their majority-owned foreign affiliates.",
