@@ -85,6 +85,27 @@
   },
   {
     "analysis": null,
+    "collected_at": "2026-11-25T14:25:53.323979+00:00",
+    "development": false,
+    "excerpt": "Real gross domestic product (GDP) increased at an annual rate of 4.3 percent in the third quarter of 2026 (July, August, and September), according to the second estimate released today by the U.S. Bureau of Economic Analysis (BEA). In the second quarter, real GDP increased 2.2 percent. The contributors to the increase in real GDP in the third quarter were increases in investment, consumer spending",
+    "id": "4277ab8b356914d426eefc50",
+    "original_title": "GDP, (Second Estimate) and Corporate Profits, 3rd Quarter 2026",
+    "published_at": "2026-11-25T13:30:00+00:00",
+    "sources": [
+      {
+        "name": "美国经济分析局 BEA",
+        "url": "https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-3rd-quarter-2026"
+      }
+    ],
+    "topics": [
+      "us"
+    ],
+    "updated_at": "2026-11-25T14:25:53.323982+00:00",
+    "version": "236d707674b3ed8cf1bef515",
+    "weight": 7
+  },
+  {
+    "analysis": null,
     "collected_at": "2026-11-20T15:40:24.514928+00:00",
     "development": false,
     "excerpt": "Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances",
@@ -102,6 +123,27 @@
     ],
     "updated_at": "2026-11-20T15:40:24.514937+00:00",
     "version": "aa378ad1a5556cc7b8252259",
+    "weight": 7
+  },
+  {
+    "analysis": null,
+    "collected_at": "2026-11-25T14:25:53.324197+00:00",
+    "development": false,
+    "excerpt": "Personal income increased $201.8 billion (0.7 percent at a monthly rate) in October, according to estimates released today by the U.S. Bureau of Economic Analysis (BEA). Disposable personal income (DPI)–personal income less personal current taxes–increased $200.5 billion (0.8 percent), and personal consumption expenditures (PCE) increased $63.8 billion (0.3 percent). Personal outlays–the sum of PC",
+    "id": "6830aad901d1c5d7f55124fa",
+    "original_title": "Personal Income and Outlays, October 2026",
+    "published_at": "2026-11-25T13:30:00+00:00",
+    "sources": [
+      {
+        "name": "美国经济分析局 BEA",
+        "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-october-2026"
+      }
+    ],
+    "topics": [
+      "us"
+    ],
+    "updated_at": "2026-11-25T14:25:53.324199+00:00",
+    "version": "4401e4a21a81f7f2ff743b8f",
     "weight": 7
   },
   {
